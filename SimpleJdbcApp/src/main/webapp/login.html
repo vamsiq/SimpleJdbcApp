@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Create Product</title>
+</head>
+
+<body>
+    <form action="/create" th:object="${data}" method="POST">
+        <label for="productName">product name</label>
+        <input type="text" id="productName" name="productName" th:field="*{productName}" required>
+        <br><br>
+        <label for="productPrice">product price</label>
+        <input type="text" id="productPrice" name="productPrice" th:field="*{productPrice}" required>
+        <br><br>
+        <label for="productGst">product gst</label>
+        <input type="text" id="productGst" name="productGst" th:field="*{productGst}" required>
+        <br><br>
+        <br>
+        <input type="submit" value="submit" />
+        <br><br> Click <a href="billing.html">here</a> to go to billing page
+    </form>
+</body>
+
+</html>

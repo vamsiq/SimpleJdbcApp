@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
+    <link rel="stylesheet" type="text/css" href="billing.css">
+</head>
+
+<body>
+    <div id="main">
+        <div>
+            <h1>Choose your Products</h1>
+            <form onsubmit="getData();return false">
+                <input type="search" id="search" placeholder="search for a product">
+                <button onclick="getData()">search</button>
+            </form>
+            <br><br><br>
+            <table id="table">
+            </table>
+        </div>
+        <div>
+            <h1>Selected Products</h1>
+            <table id="billing">
+            </table>
+        </div>
+    </div>
+
+    <br><br>
+
+    <h3>Click <a href='login.html'>here</a> to go to Creation page</h3>
+</body>
+<script src="billing.js"></script>
+
+</html>
